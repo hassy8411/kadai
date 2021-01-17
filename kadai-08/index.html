@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        button {
+            font-size:32px;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p>公平さが売りのおみくじ</p>    
+    <button id="omikuji">引け！！</button>
+
+    <script>
+        const omikuji = document.getElementById('omikuji')
+        omikuji.addEventListener('click', () => {
+            const luck = Math.random()
+            if(luck > 0.1) {
+                alert('凶')
+            } else if (luck > 0.02) {
+                alert('中吉')
+            } else {
+                alert('大吉')
+            }
+        })
+    </script>
+</body>
+</html>
